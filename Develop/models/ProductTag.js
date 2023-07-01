@@ -16,12 +16,14 @@ ProductTag.init(
       product_id:{
         type:DataTypes.INTEGER,
         allowNull: false,
-      
+        models:`product`,
+        key:`id`
 
       },
       tag_id:{
         type:DataTypes.INTEGER,
-        product:models.ID,
+        models:`tag`,
+        key:`id`
       }
     
       },
