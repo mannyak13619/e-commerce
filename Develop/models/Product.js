@@ -28,11 +28,13 @@ Product.init(
       type:DataTypes.INTEGER,
       allowNull: false,
       isNmeric:true,
+      len: [10],
 
 
     },
     category_id:{
       type:DataTypes.INTEGER,
+      category:Models.ID,
     }
 
     // define columns
