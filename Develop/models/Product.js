@@ -35,13 +35,14 @@ Product.init(
     },
     category_id:{
       type:DataTypes.INTEGER,
+      references:{
       models:`category`,
       key:`id`
     }
 
     // define columns
   },
-  {
+  
     sequelize,
     timestamps: false,
     freezeTableName: true,
