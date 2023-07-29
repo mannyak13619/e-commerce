@@ -19,7 +19,6 @@ Category.init(
 
     // define columns
   },
-
   {
     sequelize,
     timestamps: false,
@@ -28,3 +27,5 @@ Category.init(
     modelName: 'category',
   }
 );
+
+module.exports = Category
